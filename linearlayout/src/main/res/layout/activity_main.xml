@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tab Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f0f0f0"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/tab2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/tab3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mata Kuliah"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+    <!-- Home Tab Content -->
+    <LinearLayout
+        android:id="@+id/home_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang di Aplikasi Mahasiswa"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tampilkan Informasi Mahasiswa"
+            android:onClick="onHomeButtonClick"
+            android:layout_marginBottom="16dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/student_info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#e8f4fd"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:textColor="#333333" />
+
+    </LinearLayout>
+
+    <!-- Profile Tab Content -->
+    <LinearLayout
+        android:id="@+id/profile_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Workshop Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/workshop_info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#f0f8ff"
+            android:padding="12dp"
+            android:textSize="10sp"
+            android:textColor="#333333" />
+
+    </LinearLayout>
+
+    <!-- Mata Kuliah Tab Content -->
+    <LinearLayout
+        android:id="@+id/settings_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informasi Mata Kuliah"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/schedule_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#fff3cd"
+            android:padding="12dp"
+            android:textSize="11sp"
+            android:textColor="#333333" />
+
+    </LinearLayout>
+
+</LinearLayout>
